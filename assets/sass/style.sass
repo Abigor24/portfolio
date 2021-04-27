@@ -125,6 +125,7 @@
 		color: #A4ABCB
 		font-family: Montserrat
 		letter-spacing: .1rem
+		text-transform: capitalize
 	&__btns
 		margin-top: 3rem
 		display: flex
@@ -132,16 +133,32 @@
 	&__btn-here
 		margin-right: 2rem
 		padding: 1.5rem 2.5rem
-		color: #fff
+		color: #F05D7B
 		font-weight: 400
-		background: #F05D7B
+		background: transparent
 		border-radius: 10rem
 		transition: .4s
 		border: solid 1px #F05D7B
-		&:hover
-			color: #F05D7B
-			border: solid 1px #F05D7B
+		position: relative
+		&::before
+			content: ""
+			position: absolute
+			bottom: -.2rem
+			width: 80%
+			left: 0
+			right: 0
+			margin: 0 auto
+			height: 2rem
 			background: transparent
+			filter: blur(30px)
+			border-radius: 20rem
+			transition: .2s linear
+		&:hover
+			color: #fff
+			border: solid 1px #F05D7B
+			background: #F05D7B
+		&:hover::before
+			background: #F05D7B
 	&__image
 		max-width: 500px
 		img
@@ -164,7 +181,7 @@
 .usingblock
 	background: #fff
 	border-radius: .5rem
-	padding: 100px 200px
+	padding: 100px 25px
 	&__subtitle
 		font-family: Montserrat
 		font-weight: 500
@@ -184,9 +201,10 @@
 	&__row
 		grid-gap: 3rem
 		display: grid
-		grid-template-columns: 450px 450px
+		grid-template-columns: repeat(auto-fit, minmax(320px, 1fr))
 		justify-content: center
-		margin-top: 6rem
+		max-width: 880px
+		margin: 6rem auto
 	&__col-md
 		display: flex
 		align-items: center
