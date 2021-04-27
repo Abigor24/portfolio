@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap')
 
 *
 	margin: 0
@@ -22,10 +23,12 @@
 	display: flex
 	align-items: center
 	justify-content: flex-end
+	position: relative
 	&__menu
 		width: 32px
 		height: 32px
 		cursor: pointer
+		overflow: hidden
 		span
 			display: inline-block
 			margin: 0 auto
@@ -57,14 +60,96 @@
 				background: #071E48
 				border-radius: 20px
 				transition: .2s linear
+	&__drom-menu
+		transition: .2s linear
+		text-align: center
+		background: #fff
+		visibility: hidden
+		border-radius: .5rem
+		right: 5rem
+		position: absolute
+		right: 0
+		top: 80px
+		line-height: 65px
+		font-size: 1rem
+		text-align: right
+		padding: 25px 60px
+		box-shadow: 0 0 20px #0000000c
+		a
+			color: #071E48
+			&:hover
+				color: #F05D7B
 	&__menu.active
 		span
 			background: transparent
 			&::before
 				transform: rotate(45deg)
 				top: 0
-				width: 100%
+				width: 140%
 			&::after
 				transform: rotate(-45deg)
 				top: 0
-				width: 100%
+				width: 140%
+	&__drom-menu.active
+		visibility: visible
+		top: 40px
+
+.banner
+	margin-top: 5rem
+	text-transform: uppercase
+	color: #071E48
+	display: flex
+	align-items: center
+	&__item
+		margin-right: 5rem
+	&__subtitle
+		font-family: Montserrat
+		font-size: 18px
+		margin-bottom: .5rem
+		span
+			color: #F05D7B
+	&__title
+		font-weight: bold
+		font-size: 52px
+		line-height: 76px
+		max-width: 600px
+		margin-bottom: .5rem
+	&__desc
+		font-size: 18px
+		color: #A4ABCB
+		font-family: Montserrat
+		letter-spacing: .1rem
+	&__btns
+		margin-top: 3rem
+		display: flex
+		align-items: center
+	&__btn-here
+		margin-right: 2rem
+		padding: 1.5rem 2.5rem
+		color: #fff
+		font-weight: 400
+		background: #F05D7B
+		border-radius: 10rem
+		transition: .4s
+		border: solid 1px #F05D7B
+		&:hover
+			color: #F05D7B
+			border: solid 1px #F05D7B
+			background: transparent
+	&__image
+		max-width: 500px
+		img
+			width: 100%
+
+@media screen and ( max-width: 921px )
+	.banner
+		display: block
+		justify-content: center
+		&__title
+			font-size: 32px
+			line-height: 48px
+		&__image
+			margin-top: 2rem
+		&__btn-here
+			&:nth-child(2)
+				display: none
