@@ -40,7 +40,7 @@
   right: -10px;
   border-radius: 20px;
   box-sizing: border-box;
-  transition: 0.4s linear;
+  transition: 0.2s linear;
 }
 .header__menu span::before {
   content: "";
@@ -51,6 +51,7 @@
   height: 2px;
   background: #071E48;
   border-radius: 20px;
+  transition: 0.2s linear;
 }
 .header__menu span::after {
   content: "";
@@ -61,6 +62,20 @@
   height: 2px;
   background: #071E48;
   border-radius: 20px;
+  transition: 0.2s linear;
+}
+.header__menu.active span {
+  background: transparent;
+}
+.header__menu.active span::before {
+  transform: rotate(45deg);
+  top: 0;
+  width: 100%;
+}
+.header__menu.active span::after {
+  transform: rotate(-45deg);
+  top: 0;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

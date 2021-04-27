@@ -36,7 +36,7 @@
 			right: -10px
 			border-radius: 20px
 			box-sizing: border-box
-			transition: .4s linear
+			transition: .2s linear
 			&::before
 				content: ""
 				position: absolute
@@ -46,6 +46,7 @@
 				height: 2px
 				background: #071E48
 				border-radius: 20px
+				transition: .2s linear
 			&::after
 				content: ""
 				position: absolute
@@ -55,3 +56,15 @@
 				height: 2px
 				background: #071E48
 				border-radius: 20px
+				transition: .2s linear
+	&__menu.active
+		span
+			background: transparent
+			&::before
+				transform: rotate(45deg)
+				top: 0
+				width: 100%
+			&::after
+				transform: rotate(-45deg)
+				top: 0
+				width: 100%
