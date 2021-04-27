@@ -10,6 +10,7 @@
 
 .wrapper
 	font-family: 'Rubik', sans-serif
+	background: #F2F4F9
 
 .container
 	max-width: 1280px
@@ -19,7 +20,7 @@
 	box-sizing: border-box
 
 .header
-	margin-top: 50px
+	padding-top: 50px
 	display: flex
 	align-items: center
 	justify-content: flex-end
@@ -29,6 +30,8 @@
 		height: 32px
 		cursor: pointer
 		overflow: hidden
+		background: none
+		border: none
 		span
 			display: inline-block
 			margin: 0 auto
@@ -69,12 +72,13 @@
 		right: 5rem
 		position: absolute
 		right: 0
-		top: 80px
+		top: 10rem
 		line-height: 65px
 		font-size: 1rem
 		text-align: right
 		padding: 25px 60px
-		box-shadow: 0 0 20px #0000000c
+		box-shadow: 0 0 20px rgba(0, 0, 0, 0.04)
+		opacity: 0
 		a
 			color: #071E48
 			&:hover
@@ -92,7 +96,8 @@
 				width: 140%
 	&__drom-menu.active
 		visibility: visible
-		top: 40px
+		top: 6rem
+		opacity: 1
 
 .banner
 	margin-top: 5rem
@@ -140,6 +145,7 @@
 		max-width: 500px
 		img
 			width: 100%
+			vertical-align: middle
 
 @media screen and ( max-width: 921px )
 	.banner
@@ -153,3 +159,16 @@
 		&__btn-here
 			&:nth-child(2)
 				display: none
+
+.usingblock
+	background: #fff
+	border-radius: .5rem
+	padding: 100px 200px
+	&__subtitle
+		font-family: Montserrat
+		font-weight: 500
+		font-size: 18px
+		text-align: center
+		letter-spacing: 0.25em
+		text-transform: uppercase
+		color: #F05D7B
