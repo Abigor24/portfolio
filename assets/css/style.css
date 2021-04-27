@@ -244,4 +244,20 @@
   color: #A4ABCB;
 }
 
+::-webkit-scrollbar {
+  width: 0.4rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #F05D7B;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d64864;
+}
+
 /*# sourceMappingURL=style.css.map */
