@@ -152,7 +152,7 @@
 }
 .banner__btn-here {
   margin-right: 2rem;
-  padding: 1.5rem 2.5rem;
+  padding: 1.2rem 1.5rem;
   color: #F05D7B;
   font-weight: 400;
   background: transparent;
@@ -251,8 +251,8 @@
 }
 .usingblock__col-md-title {
   font-family: Montserrat;
-  font-weight: 500;
-  font-size: 24px;
+  font-weight: 600;
+  font-size: 1.3rem;
   color: #071E48;
   margin-bottom: 0.5rem;
 }
@@ -260,8 +260,101 @@
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 1rem;
   color: #A4ABCB;
+}
+
+.skills-block__row {
+  margin-top: 8rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+.skills-block__subtitle {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: left;
+  letter-spacing: 0.25em;
+  margin-left: 8rem;
+  text-transform: uppercase;
+  color: #F05D7B;
+}
+.skills-block__title {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 36px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #071E48;
+  margin-top: 0.5rem;
+}
+.skills-block__img {
+  max-width: 500px;
+}
+.skills-block__img img {
+  width: 100%;
+}
+.skills-block__item {
+  margin-left: 1rem;
+}
+.skills-block__skills-item {
+  margin-top: 5rem;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 0.5rem;
+}
+.skills-block__cirkle-block {
+  display: flex;
+  align-items: center;
+}
+.skills-block__cirkle-title {
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: #071E48;
+  margin-left: 1rem;
+}
+.skills-block__cirkle-desc {
+  margin-top: 1.3rem;
+  color: #A4ABCB;
+  font-size: 1rem;
+  max-width: 25rem;
+  line-height: 2rem;
+}
+.skills-block__percent {
+  position: relative;
+}
+.skills-block__number {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: #FFADA4;
+}
+.skills-block__percentage {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  z-index: 1000;
+  transform: rotate(-90deg);
+}
+.skills-block__circle {
+  fill: transparent;
+  stroke-width: 8px;
+  stroke: #DFE8ED;
+}
+.skills-block__circle_above {
+  stroke: #FFADA4;
+  stroke-dasharray: 251;
+  stroke-dashoffset: 70;
+  stroke-linecap: round;
+}
+.skills-block__info-box {
+  margin-top: 5rem;
 }
 
 ::-webkit-scrollbar {

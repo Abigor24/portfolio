@@ -132,7 +132,7 @@
 		align-items: center
 	&__btn-here
 		margin-right: 2rem
-		padding: 1.5rem 2.5rem
+		padding: 1.2rem 1.5rem
 		color: #F05D7B
 		font-weight: 400
 		background: transparent
@@ -178,6 +178,8 @@
 			&:nth-child(2)
 				display: none
 
+
+
 .usingblock
 	background: #fff
 	border-radius: .5rem
@@ -215,16 +217,95 @@
 			width: 100%
 	&__col-md-title
 		font-family: Montserrat
-		font-weight: 500
-		font-size: 24px
+		font-weight: 600
+		font-size: 1.3rem
 		color: #071E48
 		margin-bottom: 0.5rem
 	&__col-md-desc
 		font-family: Montserrat
 		font-style: normal
 		font-weight: normal
-		font-size: 16px
+		font-size: 1rem
 		color: #A4ABCB
+
+.skills-block
+	&__row
+		margin-top: 8rem
+		display: grid
+		grid-template-columns: repeat(auto-fit, minmax(320px, 1fr))
+	&__subtitle
+		font-family: Montserrat
+		font-weight: 500
+		font-size: 18px
+		text-align: left
+		letter-spacing: 0.25em
+		margin-left: 8rem
+		text-transform: uppercase
+		color: #F05D7B
+	&__title
+		font-family: Montserrat
+		font-weight: bold
+		font-size: 36px
+		text-align: left
+		text-transform: uppercase
+		color: #071E48
+		margin-top: .5rem
+	&__img
+		max-width: 500px
+		img
+			width: 100%
+	&__item
+		margin-left: 1rem
+	&__skills-item
+		margin-top: 5rem
+		padding: 2rem
+		background: #fff
+		border-radius: .5rem
+	&__cirkle-block
+		display: flex
+		align-items: center
+	&__cirkle-title
+		font-weight: 600
+		font-size: 1.3rem
+		color: #071E48
+		margin-left: 1rem
+	&__cirkle-desc
+		margin-top: 1.3rem
+		color: #A4ABCB
+		font-size: 1rem
+		max-width: 25rem
+		line-height: 2rem
+	&__percent
+		position: relative
+	&__number
+		position: absolute
+		left: 50%
+		top: 50%
+		transform: translate(-50%, -50%)
+		font-family: Rubik
+		font-style: normal
+		font-weight: 500
+		font-size: .8rem
+		text-transform: uppercase
+		color: #FFADA4
+	&__percentage
+		position: relative
+		width: 100px
+		height: 100px
+		z-index: 1000
+		transform: rotate(-90deg)
+	&__circle
+		fill: transparent
+		stroke-width: 8px
+		stroke: #DFE8ED
+	&__circle_above
+		stroke: #FFADA4
+		stroke-dasharray: 251
+		stroke-dashoffset: 70
+		stroke-linecap: round
+	&__info-box
+		margin-top: 5rem
+
 
 ::-webkit-scrollbar
 	width: .4rem
