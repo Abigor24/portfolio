@@ -265,7 +265,7 @@
 }
 
 .skills-block__row {
-  margin-top: 8rem;
+  margin-top: 3rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
@@ -294,67 +294,96 @@
 .skills-block__img img {
   width: 100%;
 }
-.skills-block__item {
-  margin-left: 1rem;
-}
-.skills-block__skills-item {
-  margin-top: 5rem;
-  padding: 2rem;
-  background: #fff;
-  border-radius: 0.5rem;
-}
-.skills-block__cirkle-block {
+.skills-block__info {
+  text-align: center;
   display: flex;
   align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
-.skills-block__cirkle-title {
-  font-weight: 600;
-  font-size: 1.3rem;
-  color: #071E48;
-  margin-left: 1rem;
+.skills-block__info h2 {
+  margin-left: 0;
 }
-.skills-block__cirkle-desc {
-  margin-top: 1.3rem;
-  color: #A4ABCB;
-  font-size: 1rem;
-  max-width: 25rem;
-  line-height: 2rem;
+
+.main {
+  background: #fff;
+  padding: 3.125rem;
+  border-radius: 0.625rem;
+  margin-top: 1.5625rem;
 }
-.skills-block__percent {
-  position: relative;
+
+.progress {
+  margin: 25px 0;
 }
-.skills-block__number {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  font-family: Rubik;
-  font-style: normal;
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 13px;
+}
+
+.title h3 {
+  font-size: 25px;
+  text-transform: capitalize;
   font-weight: 500;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  color: #FFADA4;
 }
-.skills-block__percentage {
+
+.barline {
+  height: 10px;
+  background: #c8d6e5;
+  border-radius: 20px;
+}
+
+.countbar {
+  height: 10px;
+  background: #9EC0FB;
+  border-radius: 20px;
   position: relative;
-  width: 100px;
-  height: 100px;
-  z-index: 1000;
-  transform: rotate(-90deg);
 }
-.skills-block__circle {
-  fill: transparent;
-  stroke-width: 8px;
-  stroke: #DFE8ED;
+
+.red {
+  background: #FFA79E;
 }
-.skills-block__circle_above {
-  stroke: #FFADA4;
-  stroke-dasharray: 251;
-  stroke-dashoffset: 70;
-  stroke-linecap: round;
+
+.green {
+  background: #A3EBC1;
 }
-.skills-block__info-box {
-  margin-top: 5rem;
+
+.purple {
+  background: #AEA4F6;
+}
+
+.pink {
+  background: #FBCBED;
+}
+
+.orange {
+  background: #FFCF98;
+}
+
+.countbar h3 {
+  position: absolute;
+  right: -19px;
+  top: -35px;
+  background: #F2F4F9;
+  color: #071E48;
+  padding: 4px 6px;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 5px;
+}
+
+.countbar h3::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  width: 11px;
+  height: 11px;
+  background: #F2F4F9;
+  transform: rotate(45deg) translateX(-60%);
 }
 
 ::-webkit-scrollbar {
