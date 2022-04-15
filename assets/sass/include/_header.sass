@@ -1,0 +1,80 @@
+.header
+	padding-top: 50px
+	display: flex
+	align-items: center
+	justify-content: flex-end
+	position: relative
+	&__menu
+		width: 32px
+		height: 32px
+		cursor: pointer
+		overflow: hidden
+		background: none
+		border: none
+		span
+			display: inline-block
+			margin: 0 auto
+			width: 60%
+			height: 2px
+			background: #071E48
+			position: relative
+			right: -5px
+			border-radius: 20px
+			box-sizing: border-box
+			transition: .2s linear
+			&::before
+				content: ""
+				position: absolute
+				top: -8px
+				right: 0
+				width: 140%
+				height: 2px
+				background: #071E48
+				border-radius: 20px
+				transition: .2s linear
+			&::after
+				content: ""
+				position: absolute
+				top: 8px
+				right: 0
+				width: 120%
+				height: 2px
+				background: #071E48
+				border-radius: 20px
+				transition: .2s linear
+	&__drom-menu
+		transition: .2s linear
+		text-align: center
+		background: #fff
+		visibility: hidden
+		border-radius: .5rem
+		right: 5rem
+		position: absolute
+		right: 0
+		top: 10rem
+		line-height: 65px
+		font-size: 1rem
+		text-align: right
+		padding: 25px 60px
+		box-shadow: 0 0 20px rgba(0, 0, 0, 0.04)
+		opacity: 0
+		a
+			color: #071E48
+			transition: .2s all
+			&:hover
+				color: #F05D7B
+	&__menu.active
+		span
+			background: transparent
+			&::before
+				transform: rotate(45deg)
+				top: 0
+				width: 140%
+			&::after
+				transform: rotate(-45deg)
+				top: 0
+				width: 140%
+	&__drom-menu.active
+		visibility: visible
+		top: 6rem
+		opacity: 1

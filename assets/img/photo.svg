@@ -1,32 +1,32 @@
-<svg width="509" height="982" viewBox="0 0 509 982" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0 218.5C0 97.8258 97.8258 0 218.5 0H437V603.5C437 724.174 339.174 822 218.5 822H0V218.5Z" fill="url(#paint0_radial)"/>
-<path d="M429 187L444.589 214H413.412L429 187Z" fill="url(#paint1_linear)"/>
-<rect x="429" y="142" width="56.5685" height="56.5685" transform="rotate(-45 429 142)" fill="url(#paint2_linear)"/>
-<path d="M505 102.349L433 176.349M505 113.349L433 187.349M505 123.349L433 197.349M505 132.349L433 206.349" stroke="url(#paint3_linear)"/>
-<path d="M91.2168 934C96.9083 941.396 104.289 953.536 85.2168 958C67.498 962.147 71.7003 974.483 74.7168 979" stroke="url(#paint4_linear)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M22.1718 51C23.7339 49.4379 26.2666 49.4379 27.8287 51C28.9016 52.0729 29.0827 53.6847 28.5847 55.0951C28.13 56.3829 26.8804 57.144 25.6633 57.7636L1.37007 70.1311C1.16134 70.2373 0.971418 69.9599 1.146 69.8038L22.1718 51Z" fill="url(#paint5_linear)"/>
+<svg width="509" height="852" viewBox="0 0 509 852" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 218.5C0 97.8258 97.8258 0 218.5 0H437V603.5C437 724.174 339.174 822 218.5 822H0V218.5Z" fill="url(#paint0_radial_307_1455)"/>
+<path d="M429 187L444.588 214H413.412L429 187Z" fill="url(#paint1_linear_307_1455)"/>
+<rect x="429" y="142" width="56.5685" height="56.5685" transform="rotate(-45 429 142)" fill="url(#paint2_linear_307_1455)"/>
+<path d="M505 102.349L433 176.349M505 113.349L433 187.349M505 123.349L433 197.349M505 132.349L433 206.349" stroke="url(#paint3_linear_307_1455)"/>
+<path d="M53.2168 804C58.9082 811.396 66.2888 823.536 47.2168 828C29.4979 832.147 33.7002 844.483 36.7168 849" stroke="url(#paint4_linear_307_1455)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M22.1718 51C23.7339 49.4379 26.2665 49.4379 27.8286 51C28.9016 52.0729 29.0826 53.6847 28.5846 55.0951C28.1299 56.3829 26.8803 57.144 25.6633 57.7636L1.37 70.1311C1.16128 70.2373 0.971357 69.9599 1.14594 69.8038L22.1718 51Z" fill="url(#paint5_linear_307_1455)"/>
 <defs>
-<radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="rotate(62.0035) scale(930.942 1751.11)">
+<radialGradient id="paint0_radial_307_1455" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="rotate(62.0035) scale(930.942 1751.11)">
 <stop stop-color="#9EC0FB"/>
 <stop offset="1" stop-color="#AEA4F6"/>
 </radialGradient>
-<linearGradient id="paint1_linear" x1="411" y1="205" x2="447" y2="205" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint1_linear_307_1455" x1="411" y1="205" x2="447" y2="205" gradientUnits="userSpaceOnUse">
 <stop stop-color="#D4FC79"/>
 <stop offset="1" stop-color="#96E6A1"/>
 </linearGradient>
-<linearGradient id="paint2_linear" x1="429" y1="142" x2="485.569" y2="198.569" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint2_linear_307_1455" x1="429" y1="142" x2="485.569" y2="198.569" gradientUnits="userSpaceOnUse">
 <stop stop-color="#DCDBF8"/>
 <stop offset="1" stop-color="#EAE6FA"/>
 </linearGradient>
-<linearGradient id="paint3_linear" x1="505" y1="97" x2="436" y2="201" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint3_linear_307_1455" x1="505" y1="97" x2="436" y2="201" gradientUnits="userSpaceOnUse">
 <stop stop-color="#FF9A9E"/>
 <stop offset="1" stop-color="#FAD0C4"/>
 </linearGradient>
-<linearGradient id="paint4_linear" x1="84.7552" y1="934" x2="84.7552" y2="979" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint4_linear_307_1455" x1="46.7551" y1="804" x2="46.7551" y2="849" gradientUnits="userSpaceOnUse">
 <stop stop-color="#FFBAE7"/>
 <stop offset="1" stop-color="#FFD7E6"/>
 </linearGradient>
-<linearGradient id="paint5_linear" x1="11.9145" y1="58.9142" x2="18.6645" y2="65.6642" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint5_linear_307_1455" x1="11.9144" y1="58.9142" x2="18.6644" y2="65.6642" gradientUnits="userSpaceOnUse">
 <stop stop-color="#F6D365"/>
 <stop offset="1" stop-color="#FDA085"/>
 </linearGradient>

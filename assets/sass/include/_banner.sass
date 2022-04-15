@@ -1,0 +1,64 @@
+.banner
+	margin-top: 5rem
+	text-transform: uppercase
+	color: #071E48
+	display: flex
+	align-items: center
+	&__item
+		margin-right: 5rem
+	&__subtitle
+		font-family: Montserrat
+		font-size: 18px
+		margin-bottom: .5rem
+		span
+			color: #F05D7B
+	&__title
+		font-weight: bold
+		font-size: 52px
+		line-height: 76px
+		max-width: 600px
+		margin-bottom: .5rem
+	&__desc
+		font-size: 18px
+		color: #A4ABCB
+		font-family: Montserrat
+		letter-spacing: .1rem
+		text-transform: capitalize
+	&__btns
+		margin-top: 3rem
+		display: flex
+		align-items: center
+	&__btn-here
+		margin-right: 2rem
+		padding: 1.2rem 1.5rem
+		color: #F05D7B
+		font-weight: 400
+		background: transparent
+		border-radius: 10rem
+		transition: .4s
+		border: solid 1px #F05D7B
+		position: relative
+		&::before
+			content: ""
+			position: absolute
+			bottom: -.2rem
+			width: 80%
+			left: 0
+			right: 0
+			margin: 0 auto
+			height: 2rem
+			background: transparent
+			filter: blur(30px)
+			border-radius: 20rem
+			transition: .2s linear
+		&:hover
+			color: #fff
+			border: solid 1px #F05D7B
+			background: #F05D7B
+		&:hover::before
+			background: #F05D7B
+	&__image
+		max-width: 500px
+		img
+			width: 100%
+			vertical-align: middle

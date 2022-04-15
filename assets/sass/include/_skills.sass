@@ -1,0 +1,113 @@
+.skills-block
+	&__row
+		margin-top: 3rem
+		display: grid
+		grid-template-columns: repeat(auto-fit, minmax(320px, 1fr))
+	&__subtitle
+		font-family: Montserrat
+		font-weight: 500
+		font-size: 18px
+		text-align: left
+		letter-spacing: 0.25em
+		margin-left: 8rem
+		text-transform: uppercase
+		color: #F05D7B
+	&__title
+		font-family: Montserrat
+		font-weight: bold
+		font-size: 36px
+		text-align: left
+		text-transform: uppercase
+		color: #071E48
+		margin-top: .5rem
+		@media screen and ( max-width: 25rem )
+			font-size: 1.125rem
+	&__img
+		max-width: 500px
+		img
+			width: 100%
+	&__info
+		text-align: center
+		display: flex
+		align-items: center
+		flex-direction: column
+		justify-content: center
+		margin-top: 50px
+		margin-bottom: 50px
+		h2
+			margin-left: 0
+	&__links
+		display: inline-flex
+		align-items: center
+		background: #FFFFFF
+		border-radius: 100px
+		padding: 1.5625rem 2.1875rem
+		max-width: 31.875rem
+		@media screen and ( max-width: 31.875rem )
+			display: none
+	&__link
+		margin: 0 10px
+		display: inline-block
+		padding: .625rem
+		background: #fff
+		border-radius: 50%
+		box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1)
+		width: 50px
+		height: 50px
+		display: flex
+		align-items: center
+		justify-content: center
+.main
+	background: #fff
+	padding: 3.125rem
+	border-radius: .625rem
+	margin-top: 6.5625rem
+		
+	.progress
+		margin: 25px 0
+		.title
+			display: flex
+			justify-content: space-between
+			margin-bottom: 13px
+			h3
+				font-size: 18px
+				text-transform: capitalize
+				font-weight: 400
+		.barline
+			height: 10px
+			background: #c8d6e5
+			border-radius: 20px
+	.countbar
+		height: 10px
+		background: #9EC0FB
+		border-radius: 20px
+		position: relative
+	.red
+		background: #FFA79E
+	.green
+		background: #A3EBC1
+	.purple
+		background: #AEA4F6
+	.pink
+		background: #FBCBED
+	.orange
+		background: #FFCF98
+	.countbar h3
+		position: absolute
+		right: -19px
+		top: -35px
+		background: #F2F4F9
+		color: #071E48
+		padding: 4px 6px
+		font-size: 16px
+		font-weight: 400
+		border-radius: 5px
+	.countbar h3::after
+		content: ""
+		position: absolute
+		bottom: -10px
+		left: 50%
+		width: 11px
+		height: 11px
+		background: #F2F4F9
+		transform: rotate(45deg) translateX(-60%)
