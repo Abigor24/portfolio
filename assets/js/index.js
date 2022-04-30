@@ -22,3 +22,17 @@ getPercent.map((items) => {
         progressBar()
     },15)
 });
+
+ScrollReveal().reveal('.header');
+
+ScrollReveal({ distance: '200px' });
+ScrollReveal().reveal('.banner__item', { origin: 'left' }, { delay: 1800 });
+ScrollReveal().reveal('.banner__image', { origin: 'right' }, { delay: 1800 });
+ScrollReveal().reveal('.usingblock', { origin: 'bottom' }, { delay: 1800 });
+
+
+ScrollReveal().reveal('.skills-block__col', { origin: 'bottom' }, { delay: 2800 });
+
+
+ScrollReveal().reveal('.skills-block', { origin: 'bottom' }, { delay: 1800 });
+ScrollReveal().reveal('.footer-email', { origin: 'bottom' }, { delay: 1800 });
