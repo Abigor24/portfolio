@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Портфолио</title>
 </head>
@@ -27,11 +28,11 @@
         <section class="banner container">
             <div class="banner__item">
                 <div class="banner__subtitle"><span>Привет,</span> меня зовут Виктор</div>
-                <div class="banner__title">Visual Designer and Web Developer</div>
-                <div class="banner__desc">Freelance UX/UI Design & Web Developer</div>
+                <div class="banner__title">Я Front-End разработчик</div>
+                <div class="banner__desc">А так же UX/UI Дизайнер</div>
                 <div class="banner__btns">
-                    <a href="#" class="banner__btn-here">Заказать работу</a>
-                    <a href="#" class="banner__btn-here">Получить резюме</a>
+                    <!-- <a href="#" class="banner__btn-here">Заказать работу</a> -->
+                    <!-- <a href="#" class="banner__btn-here">Получить резюме</a> -->
                 </div>
             </div>
             <div class="banner__image">
@@ -96,7 +97,7 @@
                     </div>
                     <div class="usingblock__col-md-item">
                         <h2 class="usingblock__col-md-title">Разработка</h2>
-                        <p class="usingblock__col-md-desc">HTML, CSS, JavaScript. React, Vue JS</p>
+                        <p class="usingblock__col-md-desc">HTML, CSS, JavaScript. React</p>
                     </div>
                 </div>
             </div>
@@ -112,7 +113,7 @@
             <div class="skills-block__row">
                 <div class="skills-block__col">
                     <div class="skills-block__img">
-                        <img src="./assets/img/photo.svg" alt="">
+                        <img srcset="./assets/img/banner-V-2@2x.png 2x" src="./assets/img/banner-V-2.png" alt="">
                     </div>
                     <div class="skills-block__links">
                         <a href="/" class="skills-block__link">
@@ -185,12 +186,70 @@
                 </div>
             </div>
         </section>
+
+
+        <section class="skills-block portfolio container">
+            <div class="skills-block__info">
+                <h2 class="skills-block__subtitle">Эксперт</h2>
+                <h1 class="skills-block__title">Особые навыки</h1>
+            </div>
+
+            <div class="portfolio__btns">
+                <button class="portfolio__btn" type="button" data-filter="all">Все работы</button>
+                <button class="portfolio__btn" type="button" data-filter=".webdev">Информационные сайты</button>
+                <button class="portfolio__btn" type="button" data-filter=".design">Интернет магазины</button>
+                <button class="portfolio__btn" type="button" data-filter=".inter-webdev">Дизайн</button>
+            </div>
+
+            <div class="portfolioBlock portfolio__row imglist">
+                <a data-fancybox="demo" data-src="./assets/img/portfolio/Gallery.jpg" class="portfolio__col mix webdev">
+                    <img src="./assets/img/portfolio/Gallery.jpg" alt="">
+                </a>
+                <a data-fancybox="demo" data-src="./assets/img/portfolio/Gallery-1.jpg" class="portfolio__col mix webdev">
+                    <img src="./assets/img/portfolio/Gallery-1.jpg" alt="">
+                </a>
+                <a data-fancybox="demo" data-src="./assets/img/portfolio/Gallery-2.jpg" class="portfolio__col mix design">
+                    <img src="./assets/img/portfolio/Gallery-2.jpg" alt="">
+                </a>
+                <a data-fancybox="demo" data-src="./assets/img/portfolio/Gallery-3.jpg" class="portfolio__col mix design">
+                    <img src="./assets/img/portfolio/Gallery-3.jpg" alt="">
+                </a>
+                <a data-fancybox="demo" data-src="./assets/img/portfolio/Gallery-4.jpg" class="portfolio__col mix inter-webdev">
+                    <img src="./assets/img/portfolio/Gallery-4.jpg" alt="">
+                </a>
+                <a data-fancybox="demo" data-src="./assets/img/portfolio/Gallery-5.jpg" class="portfolio__col mix inter-webdev">
+                    <img src="./assets/img/portfolio/Gallery-5.jpg" alt="">
+                </a>
+            </div>
+
+            <div class="portfolio__all-portfolio-block">
+                <a href="#" class="banner__btn-here portfolio__all-portfolio">Больше работ</a>
+            </div>
+        </section>
+
+
+        <footer class="footer-email container">
+            <div class="footer-email__row">
+                <h3 class="footer-email__info">
+                    Есть какой ни будь заказ?
+                    <span>Напиши мне</span>
+                </h3>
+                <a class="footer-email__link" href="mailto:niliHorizont@gmail.com">NiliHorizont@gmail.com</a>
+            </div>
+        </footer>
+
+
     </div>
 
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="./assets/js/mixitup.min.js"></script>
     <script src="./assets/js/index.js"></script>
+
+    <script>
+        var mixer = mixitup('.portfolioBlock');
+    </script>
 </body>
 
 </html>

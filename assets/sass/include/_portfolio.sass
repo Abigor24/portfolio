@@ -1,0 +1,45 @@
+.portfolio
+  margin-top: 50px
+  padding: 3.625rem 2.375rem
+  background: #fff
+  border-radius: .625rem
+  color: #071E48
+  &__btns
+    margin-bottom: 2.5rem
+    display: flex
+    align-items: center
+    justify-content: center
+    gap: 3.125rem
+    @media screen and ( max-width: 770px )
+      display: grid
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr))
+    .mixitup-control-active
+      color: #F05D7B
+  &__btn
+    position: relative
+    background: none
+    border: none
+    outline: none
+    text-transform: uppercase
+    font-weight: 500
+    font-size: 14px
+    line-height: 17px
+    letter-spacing: 0.03em
+    cursor: pointer
+  &__row
+    display: grid
+    grid-template-columns: repeat(auto-fill, minmax(375px, 1fr))
+    gap: 1.875rem
+    @media screen and ( max-width: 400px )
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr))
+  &__col
+    max-width: 24.6875rem
+    @media screen and ( max-width: 850px )
+      max-width: 100%
+    img
+      width: 100%
+  &__all-portfolio-block
+    text-align: center
+    margin-top: 50px
+  &__all-portfolio
+    display: inline-block
